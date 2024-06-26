@@ -1,0 +1,199 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root { 
+    --primary-color : #F6F6F6;
+    --secondary-color : #22d4fd;
+    --terciary-color : black; 
+    --color-hover : #82dff7; 
+
+    --font-familione : "Krona One", sans-serif; 
+}
+
+* { 
+margin: 0;
+padding: 0;
+ 
+}
+
+body { 
+    box-sizing: border-box;    
+    background-color:var(--terciary-color) ;
+    color: var(--primary-color);
+}
+
+#container{
+    width:1080px;
+    margin: 0 auto;
+}
+
+.cabecalho { 
+    position:fixed;
+    top:0;   
+    text-align:end;    
+    width:100%; 
+    margin-bottom: 1rem;       
+    padding: 20px; 
+    background-color: var(--secondary-color);
+    cursor: pointer;  
+    
+}
+
+.cabecalho_navegacao { 
+    width:auto;   
+    margin-right: 5%;    
+}
+
+.cabecalho_navegacao_opcao{ 
+    width:auto;
+    text-decoration: none;
+    background-color: var(--secondary-color);     
+    margin:2px;
+    padding: 8px;    
+    border-radius: 16PX;  
+    font-family: var(--font-familione);
+    color: var(--terciary-color); 
+    font-weight: 400; 
+    transition: all 0.1s; 
+}
+
+.titulo-destaque { 
+    color: var(--secondary-color);
+}
+
+.apresentacao {
+    align-items: center;
+    width:auto;
+   
+    display: inline-block;     
+    gap:2.9rem;
+    margin: 5% 5%;
+}
+
+.apresentacao_conteudo { 
+   
+    float: left ;       
+    width: 48%;         
+    gap: 1.2rem;
+}
+    
+
+.apresentacao_foto { 
+    float:right; 
+    width: 48%;      
+    padding: 2px;
+    border: var(--secondary-color) solid 2px;
+    border-radius: 16px;    
+}
+
+.apresentacao_conteudo_titulo {     
+    font-size: 2rem;
+    font-family: var(--font-familione);
+}
+
+.apresentacao_conteudo_texto {     
+    font-size: 1.0rem;
+    font-family: "Montserrat", sans-serif;
+}
+
+.servicos_conteudo {     
+ 
+    width:100%;        
+    margin: 0;
+    padding: 0;  
+    gap:0.5rem;   
+}
+
+.item { 
+    order: 4;
+}
+
+.servicos_apresentacao{
+    width:100%; 
+    padding: 10px 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;    
+    flex-wrap:wrap
+}
+
+.servicos_itens{
+    width:150px;
+    padding:5px 5px;
+    margin:10px;
+    background-color: var(--secondary-color);
+    text-align: center;
+
+    gap:1.5rem;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.paragrafo_servicos_itens{    
+    text-align: center;
+}
+
+
+
+.contato_form_titulo {       
+   
+    font-family: var(--font-familione);
+}
+
+.apresentacao_conteudo_formulario {  
+    margin-top: 8px;
+    margin-bottom: 8px;    
+    display:flex;   
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 45px;    
+    border-radius: 16px;
+    background-color: var(--secondary-color);    
+}
+
+label {     
+    margin-bottom: 4px;      
+}
+
+
+.apresentacao_links {  
+    width: auto;
+    display: inline-block; 
+    margin:1.5rem;
+    padding:1rem;
+}
+
+a:hover {    
+    background-color: var(--color-hover); 
+}
+
+.apresentacao_links_link { 
+    background-color: var(--secondary-color);  
+    width: 100%; 
+    float:left;
+    margin-right: 5px;
+    text-align: center;    
+    border-radius: 16PX;
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin: 10px 6px ;
+    padding: 21px 0;
+    text-decoration: none;
+    cursor: pointer; 
+    color: var(--terciary-color);
+    font-family: "Montserrat", sans-serif; 
+    gap:3rem;     
+}
+
+
+.footerpage {  
+    
+    position: fixed;
+    bottom: 0;  
+    width:100%;   
+    padding: 20px;  
+    background-color: var(--secondary-color);    
+    color: var(--terciary-color) ;
+    font-family:var(--font-familione) ;
+    font-weight: 400;
+    text-align: center;    
+}
